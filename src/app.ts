@@ -7,7 +7,10 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('My Practice Project');
+  res.status(200).json({
+    successs: true,
+    message: 'Welcome To Tour & Travel Agency',
+  });
 });
 
 export default app;
